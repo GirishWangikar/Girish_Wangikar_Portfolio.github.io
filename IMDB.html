@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Girish Wangikar | Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Girish Wangikar</strong> <span>Portfolio</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="landing.html">About</a></li>
+							<li><a href="Skills.html">Skills</a></li>
+							<li><a href="Projects.html">Projects</a></li>
+							<li><a href="elements.html">Resume</a></li>
+							<li><a href="Certifications.html">Certifications</a></li>
+						</ul>
+						<!-- <ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul> -->
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>IMDB Review Binary Classifier</h1>
+									</header>
+									<span class="image main"><img src="images/Projects/IMDB -2.png" alt="" /></span>
+									<p>Dataset and Preprocessing
+										The first step of the project involves downloading the IMDB Reviews dataset using TensorFlow Datasets. The dataset will be loaded as a collection of (input, label) pairs, where the input represents the movie review text and the label represents whether the review is positive or negative.
+										
+									</br><br>Next, the text data will be preprocessed. The sentences will be tokenized and padded to a uniform length using the Tokenizer and pad_sequences functions from TensorFlow's Keras. The preprocessing ensures that all reviews have the same length, which is essential for training the neural network.
+										
+									</br><br><b>Building the Model</br></b>
+										The sentiment classification model will be constructed using TensorFlow's Keras API. The model architecture includes an Embedding layer, which represents each word in the vocabulary with trainable word vectors. These vectors will be learned as the model trains. The output of the Embedding layer will be flattened and then passed through a Dense layer with a ReLU activation function. Finally, a single neuron with a sigmoid activation function will be used as the output layer to classify the reviews as positive or negative.
+										
+									</br><br><b>Training the Model</br></b>
+										The model will be trained using the binary cross-entropy loss function and the Adam optimizer. The training process will be executed for a specified number of epochs. After training, the model's performance will be evaluated on the test set to measure its accuracy in predicting sentiment.
+										
+									</br><br><b>Visualizing Word Embeddings</br></b>
+										After training, the word embeddings learned by the Embedding layer will be visualized using the TensorFlow Embedding Projector. The word embeddings will be saved to files vecs.tsv and meta.tsv, which will contain the vector weights of each word in the vocabulary and the corresponding words, respectively. These files will be loaded into the Tensorflow Embedding Projector to explore how words are clustered based on their learned representations.<p><b>View this project on GitHub: <a href="https://github.com/GirishWangikar/IMDB-Review-Binary-Classifier" target="_blank">link</a></b></p>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+				<section id="contact">
+					<div class="inner">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="primary" /></li>
+									<li><input type="reset" value="Clear" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split">
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-envelope"></span>
+									<h3>Email</h3>
+									<a href="#">gwangik@ncsu.edu</a>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-phone"></span>
+									<h3>Phone</h3>
+									<span>+1 (984) 944 3688</span>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-home"></span>
+									<h3>Address</h3>
+									<span>517-23, Tartan Circle,<br />
+									Raleigh, North Carolina,<br />
+									27606</span>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://github.com/GirishWangikar" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/girish-wangikar/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
