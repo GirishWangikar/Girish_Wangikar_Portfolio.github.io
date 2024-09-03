@@ -43,29 +43,41 @@
 				<!-- Main -->
 					<div id="main" class="alt">
 
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h1>IMDB Review Binary Classifier</h1>
-									</header>
-									<span class="image main"><img src="images/Projects/IMDB -2.png" alt="" /></span>
-									<p>Dataset and Preprocessing
-										The first step of the project involves downloading the IMDB Reviews dataset using TensorFlow Datasets. The dataset will be loaded as a collection of (input, label) pairs, where the input represents the movie review text and the label represents whether the review is positive or negative.
-										
-									</br><br>Next, the text data will be preprocessed. The sentences will be tokenized and padded to a uniform length using the Tokenizer and pad_sequences functions from TensorFlow's Keras. The preprocessing ensures that all reviews have the same length, which is essential for training the neural network.
-										
-									</br><br><b>Building the Model</br></b>
-										The sentiment classification model will be constructed using TensorFlow's Keras API. The model architecture includes an Embedding layer, which represents each word in the vocabulary with trainable word vectors. These vectors will be learned as the model trains. The output of the Embedding layer will be flattened and then passed through a Dense layer with a ReLU activation function. Finally, a single neuron with a sigmoid activation function will be used as the output layer to classify the reviews as positive or negative.
-										
-									</br><br><b>Training the Model</br></b>
-										The model will be trained using the binary cross-entropy loss function and the Adam optimizer. The training process will be executed for a specified number of epochs. After training, the model's performance will be evaluated on the test set to measure its accuracy in predicting sentiment.
-										
-									</br><br><b>Visualizing Word Embeddings</br></b>
-										After training, the word embeddings learned by the Embedding layer will be visualized using the TensorFlow Embedding Projector. The word embeddings will be saved to files vecs.tsv and meta.tsv, which will contain the vector weights of each word in the vocabulary and the corresponding words, respectively. These files will be loaded into the Tensorflow Embedding Projector to explore how words are clustered based on their learned representations.<p><b>View this project on GitHub: <a href="https://github.com/GirishWangikar/IMDB-Review-Binary-Classifier" target="_blank">link</a></b></p>
-								</div>
-							</section>
-
+					    <!-- One -->
+					        <section id="one">
+					            <div class="inner">
+					                <header class="major">
+					                    <h1>AI-Enhanced Text To Image Generation</h1>
+					                </header>
+					                <span class="image main"><img src="images/Projects/AI-Text-To-Image.png" alt="" /></span>
+					                <p>
+					                    <b>Project Overview</b><br>
+					                    Developed an innovative AI-powered image generation application that transforms simple text prompts into detailed descriptions and high-quality images, utilizing Gradio, Hugging Face, and LangChain technologies.
+					                    
+					                    <br><br><b>Key Features</b><br>
+					                    • Implemented an AI-driven prompt enhancement system using LangChain and Groq<br>
+					                    • Integrated Hugging Face's Inference API for advanced image generation capabilities<br>
+					                    • Designed a user-friendly interface with Gradio, featuring customizable image dimensions and example prompts<br>
+					                    • Created a dark mode UI for improved user experience and accessibility
+					                    
+					                    <br><br><b>Technical Highlights</b><br>
+					                    • Leveraged LangChain for sophisticated natural language processing and prompt expansion<br>
+					                    • Utilized Hugging Face's Inference API to transform textual descriptions into visual content<br>
+					                    • Implemented a modular architecture allowing for easy integration of multiple AI services<br>
+					                    • Developed a responsive web interface with real-time processing capabilities
+					                    
+					                    <br><br><b>Achievements</b><br>
+					                    • Successfully bridged the gap between simple user inputs and complex AI-generated visual outputs<br>
+					                    • Enhanced the creative process by automating the transition from basic ideas to detailed concepts and images<br>
+					                    • Improved accessibility to advanced AI image generation technology through an intuitive interface
+					                    
+					                    <br><br><b>Skills Demonstrated</b><br>
+					                    Natural Language Processing, Machine Learning, Python Programming, API Integration, UI/UX Design, Web Development, Image Processing, AI Application Development
+					                </p>
+					                <p><b>View this project on GitHub: <a href="https://github.com/GirishWangikar/AI-Enhanced-Text-To-Image-Generation" target="_blank">link</a></b></p>
+					            </div>
+					        </section>
+					
 					</div>
 
 				<!-- Contact -->
@@ -98,7 +110,7 @@
 								<div class="contact-method">
 									<span class="icon solid alt fa-envelope"></span>
 									<h3>Email</h3>
-									<a href="#">gwangik@ncsu.edu</a>
+									<a href="#">wangikar.girish@gmail.com</a>
 								</div>
 							</section>
 							<section>
@@ -112,8 +124,8 @@
 								<div class="contact-method">
 									<span class="icon solid alt fa-home"></span>
 									<h3>Address</h3>
-									<span>517-23, Tartan Circle,<br />
-									Raleigh, North Carolina,<br />
+									<span>
+									Raleigh, North Carolina
 									27606</span>
 								</div>
 							</section>
@@ -125,8 +137,10 @@
 				<footer id="footer">
 					<div class="inner">
 						<ul class="icons">
+							<li><a href="https://medium.com/@girishwangikar" class="icon brands alt fa-medium-m"><span class="label">Medium</span></a></li>
+						        <li><a href="https://huggingface.co/girishwangikar" class="icon brands alt fa-hubspot"><span class="label">Hugging Face</span></a></li>
 							<li><a href="https://github.com/GirishWangikar" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/girish-wangikar/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						        <li><a href="https://www.linkedin.com/in/girish-wangikar/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 						</ul>
 					</div>
 				</footer>
